@@ -15,7 +15,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.coding.maintenancehouse.R;
-import com.coding.maintenancehouse.helpers.JavaMailAPI;
 import com.coding.maintenancehouse.helpers.LocaleHelper;
 import com.coding.maintenancehouse.models.UserModel;
 import com.coding.maintenancehouse.network.NetworkUtil;
@@ -128,11 +127,11 @@ public class ClientReviewActivity extends AppCompatActivity {
 
 
                         assert userModel != null;
-                        JavaMailAPI javaMailAPI = new JavaMailAPI(ClientReviewActivity.this,
-                                "maintenancehouse.sup@gmail.com",
-                                "Review from " + userModel.getUsername(), emailMessage , ClientReviewActivity.this);
-
-                        javaMailAPI.execute();
+//                        JavaMailAPI javaMailAPI = new JavaMailAPI(ClientReviewActivity.this,
+//                                "maintenancehouse.sup@gmail.com",
+//                                "Review from " + userModel.getUsername(), emailMessage , ClientReviewActivity.this);
+//
+//                        javaMailAPI.execute();
 
                         reviewMessageEdt.setText("");
                         practitionerRateBar.setRating(0.0f);

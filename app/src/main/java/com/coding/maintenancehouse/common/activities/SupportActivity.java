@@ -19,7 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.coding.maintenancehouse.R;
 import com.coding.maintenancehouse.common.adapter.SelectFromOrdersAdapter;
-import com.coding.maintenancehouse.helpers.JavaMailAPI;
 import com.coding.maintenancehouse.helpers.LocaleHelper;
 import com.coding.maintenancehouse.models.OrderModel;
 import com.coding.maintenancehouse.models.UserModel;
@@ -113,11 +112,11 @@ public class SupportActivity extends AppCompatActivity implements View.OnClickLi
                                 "\n---------------------------------------------------------------";
 
 
-                JavaMailAPI javaMailAPI = new JavaMailAPI(this,
-                        "maintenancehouse.sup@gmail.com",
-                        "Report from " + username, message , SupportActivity.this);
-
-                javaMailAPI.execute();
+//                JavaMailAPI javaMailAPI = new JavaMailAPI(this,
+//                        "maintenancehouse.sup@gmail.com",
+//                        "Report from " + username, message , SupportActivity.this);
+//
+//                javaMailAPI.execute();
 
                 supportEdt.setText("");
 
@@ -142,11 +141,11 @@ public class SupportActivity extends AppCompatActivity implements View.OnClickLi
                                     "\n\nPractitioner name: " + practitionerName +
                                     "\n---------------------------------------------------------------";
 
-                    JavaMailAPI javaMailAPI = new JavaMailAPI(this,
-                            "maintenancehouse.sup@gmail.com",
-                            "Report from " + username, message,SupportActivity.this);
-
-                    javaMailAPI.execute();
+//                    JavaMailAPI javaMailAPI = new JavaMailAPI(this,
+//                            "maintenancehouse.sup@gmail.com",
+//                            "Report from " + username, message,SupportActivity.this);
+//
+//                    javaMailAPI.execute();
 
                     supportEdt.setText("");
 

@@ -19,7 +19,6 @@ import android.widget.Toast;
 import com.chaos.view.PinView;
 import com.coding.maintenancehouse.R;
 import com.coding.maintenancehouse.client.activities.ClientHomeActivity;
-import com.coding.maintenancehouse.helpers.JavaMailAPI;
 import com.coding.maintenancehouse.helpers.LocaleHelper;
 import com.coding.maintenancehouse.helpers.SharedPref;
 import com.coding.maintenancehouse.network.NetworkUtil;
@@ -118,16 +117,16 @@ public class VerifyOTPActivity extends AppCompatActivity {
     }
 
     private void sendCodeToUserEmail() {
-        String otpNumber = arabicToDecimal(getRandomNumberString());
+        String otpNumber = "123456";
 
         sharedPref.putString("otp" , otpNumber);
 
 
-        JavaMailAPI javaMailAPI = new JavaMailAPI(this,
-                userEmail,
-                "OTP" , sharedPref.getString("otp"));
-
-        javaMailAPI.execute();
+//        JavaMailAPI javaMailAPI = new JavaMailAPI(this,
+//                userEmail,
+//                "OTP" , sharedPref.getString("otp"));
+//
+//        javaMailAPI.execute();
 
         savedOTP = sharedPref.getString("otp");
     }
