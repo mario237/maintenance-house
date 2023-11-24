@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_25sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="@dimen/_8sdp">
+
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/profileImageCard"
+           android:layout_width="@dimen/_80sdp"
+           android:layout_height="@dimen/_80sdp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:cardCornerRadius="@dimen/_50sdp">
+
+           <ProgressBar
+               android:id="@+id/loadProfileImage"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:indeterminateDrawable="@drawable/animated_load"
+               android:layout_gravity="center"/>
+
+
+           <ImageView
+               android:id="@+id/profileImage"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:contentDescription="@string/app_name"
+               android:scaleType="centerCrop"
+               />
+       </androidx.cardview.widget.CardView>
+
+
+       <TextView
+           android:id="@+id/practitionerName"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toEndOf="@id/profileImageCard"
+           android:textSize="@dimen/_15ssp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_marginStart="@dimen/_20sdp"/>
+
+
+       <TextView
+           android:id="@+id/practitionerPhoneNumber"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/practitionerName"
+           app:layout_constraintStart_toStartOf="@id/practitionerName"
+           android:textSize="@dimen/_15ssp"
+           android:layout_marginTop="@dimen/_10sdp"
+           />
+
+
+       <ImageButton
+           android:id="@+id/declineBtn"
+           android:layout_width="@dimen/_25sdp"
+           android:layout_height="@dimen/_25sdp"
+           android:background="@drawable/red_rounded_bg"
+           app:layout_constraintTop_toBottomOf="@id/practitionerPhoneNumber"
+           app:layout_constraintStart_toStartOf="@id/practitionerPhoneNumber"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:src="@drawable/ic_close"
+           android:contentDescription="@string/app_name"/>
+
+       <ImageButton
+           android:id="@+id/acceptBtn"
+           android:layout_width="@dimen/_25sdp"
+           android:layout_height="@dimen/_25sdp"
+           android:background="@drawable/green_rounded_bg"
+           app:layout_constraintTop_toBottomOf="@id/practitionerPhoneNumber"
+           app:layout_constraintStart_toEndOf="@id/declineBtn"
+           android:layout_marginStart="@dimen/_25sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:src="@drawable/ic_check"
+           android:contentDescription="@string/app_name"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

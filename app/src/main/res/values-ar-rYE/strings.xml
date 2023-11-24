@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Maintenance House</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="if_you_don_t_have_an_account">ليس لديك حساب</string>
+    <string name="register">"تسجيل "</string>
+    <string name="client_registration">تسجيل كعميل</string>
+    <string name="practitioner_registration">تسجيل كمهني</string>
+    <string name="practitioner">مهني</string>
+    <string name="client">عميل</string>
+    <string name="full_name">الاسم بالكامل</string>
+    <string name="email_address">البريد الالكتروني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="address">العنوان</string>
+    <string name="male">ذكر</string>
+    <string name="female">انثي</string>
+    <string name="password">كلمة السر</string>
+    <string name="category">الفئة</string>
+    <string name="loading_dialog_text">برجاء الانتظار…</string>
+    <string name="my_profile">ملفي الشخصي</string>
+    <string name="home">الصفحة الرئيسية</string>
+    <string name="orders">الطلبات</string>
+    <string name="electricity">كهرباء</string>
+    <string name="plumbing">سباكة</string>
+    <string name="carpentry">نجارة</string>
+    <string name="painting">نقاشة</string>
+    <string name="conditioning">تكييفات</string>
+    <string name="heaters_cookers">سخانات وأفران</string>
+    <string name="gypsum_board">جبسون بورد</string>
+    <string name="satellite_receivers">الأقمار الصناعية وأجهزة الاستقبال</string>
+    <string name="aluminum">ألوميتال</string>
+    <string name="ceramic_tiles">سيراميك و بلاط</string>
+    <string name="select_your_service">اختر الخدمة</string>
+    <string name="add_image_for_service">اضف صورة الطلب</string>
+    <string name="order_description">وصف الطلب</string>
+    <string name="urgent_order">طلب مستعجل</string>
+    <string name="order_date">تاريخ الطلب</string>
+    <string name="order_time">وقت الطلب</string>
+    <string name="from">من</string>
+    <string name="to">إلي</string>
+    <string name="send_order">أرسل الطلب</string>
+    <string name="no_start_time_message">برجاء ادخال وقت البداية</string>
+    <string name="field_empty_message">لا يمكن أن يكون الحقل فارغًا</string>
+    <string name="all_fields_required">جميع الحقول مطلوبة</string>
+    <string name="your_orders_list">قائمة طلباتك</string>
+    <string name="you_don_t_make_orders_yet">أنت لم تطلب أوامر حتى الآن</string>
+    <string name="press_back_again">الرجاء النقر فوق \"رجوع\" مرة أخرى للخروج</string>
+    <string name="forget_password">هل نسيت كلمة المرور ؟</string>
+    <string name="send_message">"ارسال "</string>
+    <string name="type_your_message">اكتب رسالتك....</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="support">الدعم</string>
+    <string name="settings">الاعدادات</string>
+    <string name="edit_your_profile">تعديل ملفك الشخصى</string>
+    <string name="submit">تأكيد</string>
+    <string name="no_internet_connection">لا يوجد اتصال بالإنترنت</string>
+    <string name="try_again">حاول مرة أخري</string>
+    <string name="error">خطأ</string>
+    <string name="verify">تحقق</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="check_your_inbox_and_enter_code">تحقق من صندوق بريدك الإلكتروني وأدخل الرمز</string>
+    <string name="re_password">إعادة كلمة المرور</string>
+    <string name="send_otp">إرسال OTP</string>
+    <string name="jobs">وظائف</string>
+    <string name="orders_requests">الطلبات</string>
+    <string name="urgent">عاجل</string>
+    <string name="there_are_no_orders_yet">لا توجد طلبات بعد</string>
+    <string name="accept">قبول</string>
+    <string name="call">اتصل</string>
+    <string name="order_data">بيانات الطلب</string>
+    <string name="cancel">إلغاء</string>
+    <string name="your_jobs">أعمالك</string>
+    <string name="select_type">اختر نوع المشكلة</string>
+    <string name="other_not_order">اخر (ليس طلب)</string>
+    <string name="finish">تم التصليح</string>
+    <string name="policy_text">من خلال إنشاء حساب جديد ، فإنك توافق على سياسة الخصوصية الخاصة بنا</string>
+    <string name="policy">سياسة الاستخدام و الخصوصية</string>
+    <string name="policy_message_practitioner">
+        شكراً لتسجيلك لدينا يرجى التقدم الى الشركة بالاوراق التالية لاستكمال مراحل تفعيل الحساب الخاص بك
+
+\n 1 - بطاقة الهوية الشخصية بتاريخ صلاحية سارى
+\n2 - فاتورة مرافق حديثة
+\n 3 - صور من عقد الايجار او تمليك الوحدة السكنية
+\n 4 - فيش جنائى
+\n 5 - شهادة تحيليل المخدرات معتمدة من جهة حكوميه رسمية
+\n 6 - المؤهل الدراسى
+
+    </string>
+    <string name="policy_message_client">
+بمجرد الموافقة على هذه سياسة الاستخدام فأنت تقر بالاتزامك بهذه الشروط الاتية برجاء الضغط هنا لقراءة الشروط
+\n1- انك شخص راشد تجاوزت عمر 18 عام
+\n 2- انك موافق على سياسة التحصيل الخاص بنا فى شركاتنا وهى انها بعد انتهاء العمل سياتى المحصل لتقيم التصليحات
+والقطع المستبدلة ومحاسبتك عليها وانه عليك السداد حتى لا تتعرض الى المسألة القانونية
+\n 3- تخلى الشركة مسئوليتها عن حدوث اعطال اخرى بجانب مكان التصليح فى حالة عدم التبليغ عنها من فترة بداية التصليح وحتى يومين من الانتهاء منها
+\n 4- فى حالة انك قد حصلت على ضمان تصليح من الشركة يرجى معرفة بان الشركة تلتزم فقط بالجزاء الذى حدث فيه التصليح
+ويتم توضيح ذلك فى ايصال الضمان لذلك يجب عليك المراجعة مع الفنى قبل اعتماد الضمان
+\n 5- يحق للفنى تصوير الاجزاء التالفة فى منطقة العمل فقط وفى حالة مخالفة الفنى لذلك يرجى الابلاغ فوراً
+
+
+    </string>
+    <string name="decline">أرفض</string>
+    <string name="notice_message">ان اول زيارة للفحص ستكون تكلفتها ٥٠ جنيه و سيتم تحديد المشكلة الموجودة و متطلباتها و اخبارك بالتكلفة الكلية و مدة الاصلاح</string>
+    <string name="please_note">برجاء العلم أن</string>
+    <string name="enter_your_review_message">ادخل تقييمك</string>
+    <string name="send_review">ارسل التقييم</string>
+    <string name="application">التطبيق</string>
+    <string name="service">الخدمة</string>
+    <string name="review">التقييم</string>
+    <string name="otp_verification">التحقق من OTP</string>
+    <string name="click_here_to_make_review">اضغط هنا لعمل مراجعة</string>
+</resources>

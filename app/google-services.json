@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "625000376122",
+    "firebase_url": "https://maintenance-house-default-rtdb.firebaseio.com",
+    "project_id": "maintenance-house",
+    "storage_bucket": "maintenance-house.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625000376122:android:9878e945fc71f247ce9203",
+        "android_client_info": {
+          "package_name": "com.coding.maintenancehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625000376122-ivuo8k5jkbma5h8qanc4fr8doj841utp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coding.maintenancehouse",
+            "certificate_hash": "6143e3c738a571942afdd5b29400e06f51dbb14f"
+          }
+        },
+        {
+          "client_id": "625000376122-6bevbnpbjm0ehkn9k1ifgquid007dmod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHA_-mH1aQ3IeodWwmj59j-h7f5PMaZlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625000376122-6bevbnpbjm0ehkn9k1ifgquid007dmod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

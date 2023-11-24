@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.fragments.SearchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/searchTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:text="@string/search_for_order"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_15ssp" />
+
+
+            <LinearLayout
+                android:id="@+id/searchLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchTitle"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/orderIdEdt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/yellow_border"
+                    android:hint="@string/enter_order_id"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:layoutDirection="locale"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorTextHint"
+                    android:textDirection="locale" />
+
+
+                <ImageButton
+                    android:id="@+id/searchBtn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/accent_radius_bg"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_search" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/orderCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchLayout"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedScrolling">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/orderIdText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_id_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/orderIdTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/orderIdText"
+                            app:layout_constraintTop_toTopOf="@id/orderIdText" />
+
+
+                        <TextView
+                            android:id="@+id/orderCategoryText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:text="@string/order_category_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/orderIdText"
+                            app:layout_constraintTop_toBottomOf="@id/orderIdText" />
+
+
+                        <TextView
+                            android:id="@+id/orderCategoryTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/orderCategoryText"
+                            app:layout_constraintTop_toTopOf="@id/orderCategoryText" />
+
+
+                        <TextView
+                            android:id="@+id/orderDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:text="@string/order_date_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/orderDateText"
+                            app:layout_constraintTop_toBottomOf="@id/orderCategoryText" />
+
+
+                        <TextView
+                            android:id="@+id/orderDateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/orderDateText"
+                            app:layout_constraintTop_toTopOf="@id/orderDateText" />
+
+
+                        <TextView
+                            android:id="@+id/orderTimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:text="@string/order_time_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/orderDateText"
+                            app:layout_constraintTop_toBottomOf="@id/orderDateText" />
+
+
+                        <TextView
+                            android:id="@+id/orderTimeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/orderTimeText"
+                            app:layout_constraintTop_toTopOf="@id/orderTimeText" />
+
+
+                        <TextView
+                            android:id="@+id/orderDescText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:text="@string/order_description_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/orderTimeText"
+                            app:layout_constraintTop_toBottomOf="@id/orderTimeText" />
+
+
+                        <TextView
+                            android:id="@+id/orderDescTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/_12ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@id/orderDescText"
+                            app:layout_constraintTop_toBottomOf="@id/orderDescText" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderCard"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedScrolling">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/usernameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/usernameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/usernameText"
+                            app:layout_constraintTop_toTopOf="@id/usernameText" />
+
+
+                        <TextView
+                            android:id="@+id/userEmailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/email_address_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/usernameText"
+                            app:layout_constraintTop_toBottomOf="@id/usernameText" />
+
+
+                        <TextView
+                            android:id="@+id/userEmailTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/userEmailText"
+                            app:layout_constraintTop_toTopOf="@id/userEmailText" />
+
+
+                        <TextView
+                            android:id="@+id/userPhoneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/phone_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/userEmailText"
+                            app:layout_constraintTop_toBottomOf="@id/userEmailText" />
+
+
+                        <TextView
+                            android:id="@+id/userPhoneTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/userPhoneText"
+                            app:layout_constraintTop_toTopOf="@id/userPhoneText" />
+
+
+                        <TextView
+                            android:id="@+id/userAddressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/address_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/userPhoneText"
+                            app:layout_constraintTop_toBottomOf="@id/userPhoneText" />
+
+
+                        <TextView
+                            android:id="@+id/userAddressTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/userAddressText"
+                            app:layout_constraintTop_toTopOf="@id/userAddressText" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/practitionerCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userCard"
+                android:layout_margin="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedScrolling">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/practitionerNameText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/practitioner_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerNameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/practitionerNameText"
+                            app:layout_constraintTop_toTopOf="@id/practitionerNameText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerEmailText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/email_address_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/practitionerNameText"
+                            app:layout_constraintTop_toBottomOf="@id/practitionerNameText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerEmailTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/practitionerEmailText"
+                            app:layout_constraintTop_toTopOf="@id/practitionerEmailText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerPhoneText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/phone_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/practitionerEmailText"
+                            app:layout_constraintTop_toBottomOf="@id/practitionerEmailText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerPhoneTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintStart_toEndOf="@id/practitionerPhoneText"
+                            app:layout_constraintTop_toTopOf="@id/practitionerPhoneText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerAddressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/address_search"
+                            android:textSize="@dimen/_13ssp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/practitionerPhoneText"
+                            app:layout_constraintTop_toBottomOf="@id/practitionerPhoneText" />
+
+
+                        <TextView
+                            android:id="@+id/practitionerAddressTv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textSize="@dimen/_13ssp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/practitionerAddressText"
+                            app:layout_constraintTop_toTopOf="@id/practitionerAddressText" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </ScrollView>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/loadOrdersInfoProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/animated_load" />
+
+</RelativeLayout>

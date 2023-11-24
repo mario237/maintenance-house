@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Maintenance House</string>
+    <string name="login">Login</string>
+    <string name="if_you_don_t_have_an_account">If you don\'t have an account</string>
+    <string name="register">Register</string>
+    <string name="client_registration">Client Registration</string>
+    <string name="practitioner_registration">Practitioner Registration</string>
+
+    <string name="practitioner">Practitioner</string>
+    <string name="client">Client</string>
+    <string name="full_name">Full name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="password">Password</string>
+    <string name="category">Category</string>
+    <string name="loading_dialog_text">Please wait …</string>
+    <string name="my_profile">My Profile</string>
+    <string name="home">Home</string>
+    <string name="orders">Orders</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="electricity">Electricity</string>
+    <string name="plumbing">Plumbing</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="painting">Painting</string>
+    <string name="conditioning">Conditioning</string>
+    <string name="heaters_cookers">Heaters and cookers</string>
+    <string name="gypsum_board">Gypsum Board</string>
+    <string name="satellite_receivers">Satellite and Receivers</string>
+    <string name="aluminum">Aluminum</string>
+    <string name="ceramic_tiles">Ceramic and Tiles</string>
+    <string name="select_your_service">Select your service</string>
+    <string name="add_image_for_service">Add Image for Service</string>
+    <string name="order_description">Order Description</string>
+    <string name="urgent_order">Urgent order</string>
+    <string name="order_date">Order Date</string>
+    <string name="order_time">Order Time</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="send_order">Send Order</string>
+    <string name="no_start_time_message">please enter start time</string>
+    <string name="field_empty_message">Field cannot be empty</string>
+    <string name="all_fields_required">All fields are required</string>
+    <string name="your_orders_list">Your Orders List</string>
+    <string name="you_don_t_make_orders_yet">You didn\'t request orders yet</string>
+    <string name="support">Support</string>
+    <string name="settings">Settings</string>
+    <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="submit">Submit</string>
+    <string name="type_your_message">Type your message…</string>
+    <string name="send_message">Send Message</string>
+    <string name="english" translatable="false">English</string>
+    <string name="arabic" translatable="false">عربى</string>
+    <string name="logout">Logout</string>
+    <string name="forget_password">Forget Password ? </string>
+    <string name="press_back_again">Please click BACK again to exit</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="try_again">Try again</string>
+    <string name="error">Error</string>
+    <string name="verify">Verify</string>
+    <string name="change_password">Change Password</string>
+    <string name="check_your_inbox_and_enter_code">Check your email inbox and enter code</string>
+    <string name="re_password">Re password</string>
+    <string name="send_otp">Send OTP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="jobs">Jobs</string>
+    <string name="orders_requests">Orders</string>
+    <string name="urgent">Urgent</string>
+    <string name="there_are_no_orders_yet">There are no orders yet</string>
+    <string name="accept">Accept</string>
+    <string name="call">Call</string>
+    <string name="order_data">Order data</string>
+    <string name="cancel">Cancel</string>
+    <string name="your_jobs">Your Jobs</string>
+    <string name="select_type">Select Type</string>
+    <string name="other_not_order">Other (not order)</string>
+    <string name="finish">Finish</string>
+    <string name="new_practitioners" translatable="false">New Practitioners</string>
+    <string name="search" translatable="false">Search</string>
+    <string name="there_are_no_practitioners_yet" translatable="false">There are no practitioners yet</string>
+    <string name="search_for_order" translatable="false">Search for order</string>
+    <string name="enter_order_id" translatable="false">Enter Order ID</string>
+    <string name="order_date_search" translatable="false">Order Date :</string>
+    <string name="order_description_search" translatable="false">Order Description:</string>
+    <string name="order_category_search" translatable="false">Order Category:</string>
+    <string name="order_id_search" translatable="false">Order ID:</string>
+    <string name="order_time_search" translatable="false">Order Time:</string>
+    <string name="username_search" translatable="false">Username :</string>
+    <string name="email_address_search" translatable="false">Email :</string>
+    <string name="phone_search" translatable="false">Phone :</string>
+    <string name="address_search" translatable="false">Address :</string>
+    <string name="practitioner_search" translatable="false">Practitioner :</string>
+    <string name="policy_text">By creating a new account, you agree with our Privacy policy</string>
+    <string name="policy">Usage and Privacy Policy</string>
+    <string name="policy_message_practitioner">Thank you for registering with us, please submit to the company the following documents to complete the stages of activating your account
+\n 1 - Personal identity card with a valid validity date
+\n 2- A recent utility bill
+\n 3 - Copies of the rental contract or the ownership of the housing unit
+\n 4 - Crime Record
+\n5- A drug analysis certificate approved by an official government agency
+\n 6- Academic qualification</string>
+
+    <string name="policy_message_client">
+        Once you agree to this usage policy, you acknowledge your commitment to these terms, please click here to read the terms
+\n1- You are an adult person over the age of 18
+\n2- You agree to our collection policy in our companies, which is that after the work is completed, the collector will come to evaluate the repairs
+And the replaced parts, and you will be held accountable for them and that you have to pay so that you do not face the legal issue
+\n3- The company disclaims its responsibility for the occurrence of other malfunctions beside the place of repair in the event that it is not reported from the beginning of the repair and up to two days from its completion
+\n4- In the event that you have obtained a repair guarantee from the company, please know that the company is only bound by the penalty in which the repair occurred
+This is explained in the warranty receipt, so you must review with the technician before adopting the warranty
+\n5- The technician has the right to photograph the damaged parts in the work area only, and in case the technician violates this, please report immediately
+    </string>
+    <string name="decline">Decline</string>
+    <string name="otp_verification">OTP verification</string>
+    <string name="review">Review</string>
+    <string name="service">Service</string>
+    <string name="application">Application</string>
+    <string name="send_review">Send Review</string>
+    <string name="enter_your_review_message">Enter your review message</string>
+    <string name="please_note">Please Note that</string>
+    <string name="notice_message">the first inspection visit will cost 50 EGP, and the existing problem and its requirements will be identified, and you will be informed of the total cost and repair period.</string>
+    <string name="click_here_to_make_review">Click here to make a review</string>
+</resources>

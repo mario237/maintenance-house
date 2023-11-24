@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:scrollbars="none"
+    tools:context=".client.activities.OrderServiceActivity"
+    tools:ignore="Overdraw">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/backIcon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintBottom_toBottomOf="@id/serviceNameText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/serviceNameText"
+                app:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/serviceNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/backIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imagePreviewRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/topBar" />
+
+        <Button
+            android:id="@+id/addImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/add_image_for_service"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/imagePreviewRecycler" />
+
+        <TextView
+            android:id="@+id/orderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/order_description"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addImageBtn" />
+
+        <EditText
+            android:id="@+id/orderDescEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/yellow_border"
+            android:gravity="top|start"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintTop_toBottomOf="@id/orderTxt"
+            tools:ignore="LabelFor" />
+
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/urgentCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/urgent_order"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/orderDescEdt"
+            app:layout_constraintTop_toBottomOf="@id/orderDescEdt" />
+
+
+        <TextView
+            android:id="@+id/orderDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/order_date"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/urgentCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/urgentCheckBox" />
+
+        <EditText
+            android:id="@+id/orderDateEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/yellow_border"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/ic_calender"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableTint="@color/colorAccent"
+            android:focusable="false"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:padding="@dimen/_8sdp"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@id/orderDateText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orderDateText"
+            app:layout_constraintTop_toTopOf="@id/orderDateText"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/orderTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="@string/order_time"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/orderDateText"
+            app:layout_constraintTop_toBottomOf="@id/orderDateText" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="@id/orderTimeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orderTimeText"
+            app:layout_constraintTop_toTopOf="@id/orderTimeText">
+
+            <EditText
+                android:id="@+id/fromTimeEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="time"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/from"
+                android:textColor="@color/colorWhite"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/toTimeEdt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/yellow_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:inputType="time"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/to"
+                android:textColor="@color/colorWhite"
+                tools:ignore="LabelFor" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/noticeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/orderTimeText"
+            app:layout_constraintTop_toBottomOf="@id/orderTimeText"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="@string/please_note"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/noticeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/noticeTv"
+            app:layout_constraintTop_toBottomOf="@id/noticeTv"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/notice_message"
+            android:textSize="@dimen/_13ssp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textColor="@color/colorWhite"
+            />
+
+
+        <Button
+            android:id="@+id/sendOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:backgroundTint="@color/colorAccent"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/send_order"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_14ssp"
+            app:cornerRadius="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/noticeText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
